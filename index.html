@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ameer's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+
+            /* Instagram-like gradient background */
+            background: linear-gradient(135deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f77737, #fcaf45, #ffdc80);
+            background-size: 400% 400%;
+            animation: gradientMove 12s ease infinite;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* White card-like container for readability */
+        .page-wrapper {
+            max-width: 1100px;
+            margin: auto;
+            background: #ffffffd8;
+            backdrop-filter: blur(6px);
+            border-radius: 12px;
+            padding-bottom: 40px;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Top Navbar */
+        .navbar {
+            width: 100%;
+            background: #ffffff;
+            border-bottom: 1px solid #dbdbdb;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 12px 12px 0 0;
+        }
+
+        /* Profile Section */
+        .profile-container {
+            display: flex;
+            padding: 40px;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+
+            /* IG Story-style gradient ring */
+            padding: 4px;
+            background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-pic div {
+            width: 140px;
+            height: 140px;
+            background: #ddd;
+            border-radius: 50%;
+        }
+
+        .profile-info h2 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .profile-info p {
+            margin: 6px 0;
+        }
+
+        /* Stats like Instagram */
+        .stats {
+            display: flex;
+            gap: 30px;
+            margin: 15px 0;
+        }
+
+        .stats div {
+            text-align: center;
+        }
+
+        /* Grid Section */
+        .section-title {
+            text-align: center;
+            font-size: 22px;
+            margin-top: 30px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .grid-item {
+            background: #eee;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-wrapper">
+
+    <!-- Navbar -->
+    <div class="navbar">Ameer's Portfolio</div>
+
+    <!-- Profile Section -->
+    <div class="profile-container">
+        <div class="profile-pic">
+            <div></div>
+        </div>
+
+        <div class="profile-info">
+            <h2>Ameer</h2>
+            <p>Email: <strong>ameerameer59514@gmail.com</strong></p>
+            <p>Bachelor's Student — Computer Science</p>
+
+            <div class="stats">
+                <div>
+                    <strong>5</strong><br />Skills
+                </div>
+                <div>
+                    <strong>3</strong><br />Projects
+                </div>
+                <div>
+                    <strong>1</strong><br />Degree
+                </div>
+            </div>
+
+            <p><strong>Skills:</strong> HTML, CSS, JavaScript, Python, C Programming</p>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <h2 class="section-title">Projects</h2>
+    <div class="grid">
+        <div class="grid-item">Portfolio Website</div>
+        <div class="grid-item">Weather App</div>
+        <div class="grid-item">To-Do App</div>
+    </div>
+
+    <!-- Contact Section -->
+    <h2 class="section-title">Contact</h2>
+    <div style="text-align:center; padding: 10px; font-size:18px;">
+        Email: <strong>ameerameer59514@gmail.com</strong><br />
+        GitHub: <strong>https://github.com/ameerameer59514-cmd/ameerproject1.git</strong><br />
+        Phone: <strong>+91-XXXXXXXXXX</strong>
+    </div>
+
+    <footer>
+        © 2025 Ameer — All Rights Reserved
+    </footer>
+
+</div>
+
+</body>
+</html>
